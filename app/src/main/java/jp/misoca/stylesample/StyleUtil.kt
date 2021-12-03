@@ -7,11 +7,11 @@ import androidx.appcompat.view.ContextThemeWrapper
 object StyleUtil {
     fun getWindowLightStatusBar(context: Context, @StyleRes styleRes: Int): Boolean {
         val themedContext = ContextThemeWrapper(context, styleRes)
-        val windowLightStatusBar = themedContext.theme.obtainStyledAttributes(
+        val typedArray = themedContext.theme.obtainStyledAttributes(
                 intArrayOf(android.R.attr.windowLightStatusBar)
-        ).use {
-            it.getBoolean(0, false)
-        }
-        return windowLightStatusBar
+        )
+        val isLight = typedArray.getBoolean(0, false)
+        typedArray.recycle()
+        return isLight
     }
 }
