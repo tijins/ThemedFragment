@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StyleSample" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- ActionBar color -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- DrawerLayout background (it covers the entire screen)  -->
+        <item name="colorPrimaryDark">@color/yellow_status_bar</item>
+        <!--Status bar color must be transparent-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.StyleSample.Red">
+        <!-- ActionBar color -->
+        <item name="colorPrimary">@color/red</item>
+        <!-- DrawerLayout background (it covers the entire screen)  -->
+        <item name="colorPrimaryDark">@color/red_status_bar</item>
+        <item name="android:text">テーマのtext(Red)</item>
+    </style>
+
+    <style name="Theme.StyleSample.Green">
+        <!-- ActionBar color -->
+        <item name="colorPrimary">@color/green</item>
+        <!-- DrawerLayout background (it covers the entire screen)  -->
+        <item name="colorPrimaryDark">@color/green_status_bar</item>
+        <item name="android:text">テーマのtext(green)</item>
+        <!--Status bar text color is black-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="SomeStyle">
+        <item name="misocaText">Misoca</item>
+        <item name="misocaColor" tools:targetApi="l">@color/red</item>
+    </style>
+
+    <style name="MisocaTextViewStyle">
+        <item name="misocaText">Misoca</item>
+        <item name="misocaColor" tools:targetApi="l">@color/red</item>
+    </style>
+</resources>
