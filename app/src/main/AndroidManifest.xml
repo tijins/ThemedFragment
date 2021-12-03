@@ -6,7 +6,8 @@
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.StyleSample">
+        android:theme="@style/Theme.StyleSample"
+        android:name=".MainApplication">
         <activity
             android:name=".MainActivity"
             android:exported="true"
