@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "jp.misoca.stylesample"
-        minSdk 24
+        minSdk 26
         targetSdk 31
         versionCode 1
         versionName "1.0"
