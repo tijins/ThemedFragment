@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="MisocaTextViw">
-        <attr name="misocaText" format="string"/>
-        <attr name="misocaColor" format="color"/>
-    </declare-styleable>
-</resources>
