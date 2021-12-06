@@ -5,7 +5,8 @@ FragmentにToolbarまで実装した単一Activityのアプリケーションに
 画面遷移はJetpack Navigationで行っています。
 
 ## ThemedFragment
-Fragment毎に異なるThemeを指定できるFragmentです
+ThemedFragment(@LayoutRes val layoutRes: Int, @StyleRes val styleRes: Int)
+
 
 ## ステータスバー文字色
 ステータスバー文字色はThemeのwindowLightStatusBarで制御できますが、Fragmentに指定するだけでは反映されません。
