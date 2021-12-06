@@ -12,10 +12,11 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         val navHost = supportFragmentManager.findFragmentById(R.id.nav_host)!!
         navHost.childFragmentManager.addOnBackStackChangedListener {
             val currentFragment = navHost.childFragmentManager.fragments.firstOrNull()
-            if (currentFragment is ThemedFragment) {
-                val isLight = StyleUtil.getWindowLightStatusBar(this, currentFragment.styleRes)
-                setLightStatusBar(isLight)
-            }
+            val isLight = StyleUtil.getWindowLightStatusBar(
+                    this,
+                    (currentFragment as? ThemedFragment)?.styleRes
+            )
+            setLightStatusBar(isLight)
         }
     }
 
