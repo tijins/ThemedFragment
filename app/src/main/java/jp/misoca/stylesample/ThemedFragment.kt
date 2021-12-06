@@ -13,6 +13,6 @@ abstract class ThemedFragment(@LayoutRes val layoutRes: Int, @StyleRes val style
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val themedContext = ContextThemeWrapper(context, styleRes)
         val themedInflater = inflater.cloneInContext(themedContext)
-        return themedInflater.inflate(layoutRes, container, false)
+        return super.onCreateView(themedInflater, container, savedInstanceState)
     }
 }
